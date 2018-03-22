@@ -1,0 +1,257 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+.container{
+  width: 75%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+body{
+  font-size: 1em;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  background-color: #eaeaef;
+  color: #525254;
+}
+img{
+  max-width: 100%;
+}
+h1{
+  font-family: 'Amaranth', sans-serif;
+  font-weight: normal;
+}
+h2{
+  padding: 1rem;
+}
+h3, h4{
+  text-align: center;
+  padding: 1rem;
+}
+h4{
+  color: #666664;
+}
+ul li{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+}
+ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+header{
+  background-image: url(img/bg.jpg);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-color: #96B011;
+}
+main{
+  margin: 0 auto;
+}
+nav>ul{
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+nav ul li{
+  padding: 1rem;
+}
+nav ul li a{
+  padding: 1rem;
+}
+footer{
+  background-color:#96B011;
+  display: flex;
+  flex-direction: column;
+}
+footer h2{
+  text-align: center;
+  color: #fff;
+}
+footer .icon{
+  display: block;
+  margin: 0 auto;
+  vertical-align: middle;
+  font-size: 30px;
+  padding: 5px;
+}
+footer nav ul li a{
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.top-message{
+  color: #fff;
+  background-color: rgba(136, 158, 11, 0.5);
+  text-align: center;
+  padding: 1rem;
+}
+.logo{
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+.title{
+  color: #fff;
+  background-color:rgba(150, 176, 17, 1);
+  display: flex;
+  flex-direction: column;
+  padding: 15px 30px;
+  margin-bottom: 15px;
+}
+.main-cup{
+  margin: 0 auto;
+  box-shadow: 1px 1px 1px 1px #cfcfd1;
+  padding: 15px;
+  background-color: #fff;
+  margin: 30px 0;
+}
+.cups{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.tea-cups{
+  box-shadow: 1px 1px 1px 1px #cfcfd1;
+  background-color: #fff;
+  margin: 30px 0;
+}
+.nouveautes h2{
+  background-color: #E26A6A;
+  color: #fff;
+}
+.best-sellers h2{
+  background-color: #F4B350;
+  color: #fff;
+}
+.coup-de-coeur h2{
+  background-color: #4ECDC4;
+  color: #fff;
+}
+.recommendations{
+  display: flex;
+  flex-direction: column;
+}
+.cup{
+  padding: 0.5rem;
+  vertical-align: bottom;
+}
+.tea-pic{
+  margin: 0 auto;
+  display: block;
+}
+.nouveautes{
+  box-shadow: 1px 1px 1px 1px #cfcfd1;
+  background-color: #fff;
+  margin: 30px 0;
+}
+.best-sellers{
+  box-shadow: 1px 1px 1px 1px #cfcfd1;
+  background-color: #fff;
+  margin: 30px 0;
+}
+.coup-de-coeur{
+  box-shadow: 1px 1px 1px 1px #cfcfd1;
+  background-color: #fff;
+  margin: 30px 0;
+}
+.services{
+  background-color: rgba(136, 158, 11, 0.7);
+}
+.page-bottom {
+  background-image: url(img/bg.jpg);
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+header a:hover{
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: background-color 0.5s ease;
+}
+a:hover{
+  color: #fff;
+  transition: color 0.5s ease;
+}
+
+@media only screen and (max-width: 768px)  {
+  .shopping-cart{
+    display: none;
+  }
+}
+
+@media only screen and (min-width : 768px){
+  header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header nav ul li{
+    padding: 0;
+  }
+  .cups{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .cart {
+    font-size: 2rem;
+    color: #bfd884;
+  }
+  .services ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .page-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+
+@media only screen and (min-width : 1024px){
+
+  nav ul li{
+    padding: 0.2rem;
+  }
+  h2{
+    padding: 0.5rem;
+  }
+  .title{
+    color: #fff;
+    background-color:rgba(150, 176, 17, 0.7);
+    display: flex;
+    flex-direction: column;
+    padding: 15px 30px;
+    margin-bottom: 15px;
+    position: absolute;
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (min-width : 1200px){
+  .recommendations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width : 1350px){
+  .nouveautes{
+    min-width: 30%;
+  }
+  .best-sellers{
+    min-width: 30%;
+  }
+  .coup-de-coeur{
+    min-width: 30%;
+  }
+}
